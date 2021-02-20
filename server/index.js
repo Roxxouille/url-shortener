@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to mongodb
-const dbURI = 'mongodb+srv://roxxouille:S2a9lRbqNGnNCU2k@url-shortener.kr0zd.mongodb.net/url-shortener?retryWrites=true&w=majority';
+const dbURI = ''; // Enter your mongodb uri
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => {
         console.log('connected to db')
